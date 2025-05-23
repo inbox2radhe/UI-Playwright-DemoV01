@@ -85,12 +85,7 @@ test('Login', async({page})=>{
     await page.keyboard.press('ArrowDown');
     await page.keyboard.press('ArrowDown');
     await page.keyboard.press('Enter');
-//     const stateVal = page.locator("//div[@aria-owns='state-listbox']/ancestor::div//input[@aria-activedescendant='state-option-17']");
-//     const desireState='Kansas';
-//     aria-owns="state-listbox"
-//    const stateOption= await page.locator("[role='combobox']:has-text('kansas')");
-//     const stateVal= page.locator("[aria-activedescendant='state-option-17']");
-//     await stateVal.click();
+
     await page.waitForTimeout(2000);
     const reg_Name= page.locator("[name='regName']");
     await reg_Name.waitFor({state:'visible'});
